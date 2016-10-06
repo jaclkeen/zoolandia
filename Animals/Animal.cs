@@ -5,8 +5,11 @@ namespace ConsoleApplication {
         public string name {get;set;}
         public int length {get; set;}
         public string call{get;set;}
-        public static void sleep() {
-            Console.WriteLine("Animal is now sleeping");
+        public string sleep() {
+            return "Animal is now sleeping";
+        }
+        public virtual string foods(){
+            return "Grass";
         }
     }
 }
