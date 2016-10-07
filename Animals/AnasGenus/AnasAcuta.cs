@@ -1,7 +1,7 @@
 using System;
 
 namespace ConsoleApplication {
-    class AnasAcuta: Animal {
+    class AnasAcuta: Anas {
         public AnasAcuta(){
             this.name = "Northern Pintail";
         }
@@ -17,6 +17,9 @@ namespace ConsoleApplication {
         }
         public override string foods(){
             return $"instead of {base.foods()}, it eats PEOPLE!";
+        }
+        public override string diveDepth(){
+            return "medium";
         }
     }
 }

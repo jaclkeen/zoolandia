@@ -1,7 +1,7 @@
 using System;
 
 namespace ConsoleApplication {
-    class AnasAmerican: Animal {
+    class AnasAmerican: Anas {
         public AnasAmerican(){
             this.name = "American Wigeon";
         }
@@ -17,6 +17,9 @@ namespace ConsoleApplication {
         }
         public override string foods(){
             return $"instead of {base.foods()}, it eats dirt";
+        }
+         public override string diveDepth(){
+            return "deeepppp";
         }
     }
 }
