@@ -2,7 +2,6 @@ using System;
 
 namespace ConsoleApplication {
     class Marila: Aythya {
-        public string color = "white and dark grey";
         public Marila(){
             this.name = "Greater Scaup";
         }

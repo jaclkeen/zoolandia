@@ -2,7 +2,6 @@ using System;
 
 namespace ConsoleApplication {
     class Americana: Aythya {
-        public string color = "red";
         public Americana(){
             this.name = "Redhead";
         }

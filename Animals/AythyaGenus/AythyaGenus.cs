@@ -6,11 +6,10 @@ namespace ConsoleApplication {
         public string genusMeaning = "sea-dwelling duck";
         public string genusAnimalType = "diving ducks";
         public string printDuck() {
-            return $"Name:{base.name} GenusName:{this.genusName} GenusMeaning:{this.genusMeaning} ConsistsOf:{this.genusAnimalType} Call:{base.call} Foods:{base.foods()}";
+            return $"Name:{base.name} GenusName:{this.genusName} GenusMeaning:{this.genusMeaning} ConsistsOf:{this.genusAnimalType} Foods:{base.foods()} Color: {this.color}";
         }
         public string swim(){
-            int speed = 1;
-            return $"This duck is swimming {speed}mph";
+            return $"This duck is swimming 1 mph";
         }
     }
 }

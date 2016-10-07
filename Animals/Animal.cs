@@ -2,6 +2,7 @@ using System;
 
 namespace ConsoleApplication {
     class Animal {
+        public string color {get; set;}
         public string name {get;set;}
         public int length {get; set;}
         public string call {get;set;}

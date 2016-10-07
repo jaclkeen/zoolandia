@@ -2,7 +2,6 @@ using System;
 
 namespace ConsoleApplication {
     class Affinis: Aythya {
-        public string color = "grey and brown";
         public Affinis(){
             this.name = "Lesser Scaup";
         }
