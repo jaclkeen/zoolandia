@@ -1,7 +1,7 @@
 using System;
 
 namespace ConsoleApplication {
-    class Animal {
+    class Animal: IAnimal {
         public string color {get; set;}
         public string name {get;set;}
         public int length {get; set;}
