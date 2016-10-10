@@ -1,7 +1,8 @@
 using System;
 
 namespace ConsoleApplication {
-    class Marila: Aythya {
+    class Marila: Animal {
+        public Aythya genus = new Aythya();
         public Marila(){
             this.name = "Greater Scaup";
         }

@@ -1,7 +1,8 @@
 using System;
 
 namespace ConsoleApplication {
-    class Affinis: Aythya {
+    class Affinis: Animal {
+        public Aythya genus = new Aythya();
         public Affinis(){
             this.name = "Lesser Scaup";
         }
