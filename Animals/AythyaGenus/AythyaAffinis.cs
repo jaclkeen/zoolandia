@@ -1,8 +1,8 @@
 using System;
 
 namespace ConsoleApplication {
-    class Affinis: Aythya {
-        public string color = "grey and brown";
+    class Affinis: Animal {
+        public Aythya genus = new Aythya();
         public Affinis(){
             this.name = "Lesser Scaup";
         }

@@ -1,15 +1,12 @@
 using System;
 
 namespace ConsoleApplication {
-    class Anas: Animal {
+    class Anas {
         public string genusName = "Anas";
         public string genusMeaning = "duck";
         public string genusAnimalType = "dabbling ducks";
-        public string printDuck() {
-            return $"Name:{base.name} GenusName:{this.genusName} GenusMeaning:{this.genusMeaning} ConsistsOf:{this.genusAnimalType} Call:{base.call} Foods:{base.foods()} DiveDepth: {this.diveDepth()}";
-        }
-        public virtual string diveDepth(){
-            return "low";
+        public string genusInformation(){
+            return  $"GenusName:{this.genusName} GenusMeaning:{this.genusMeaning} ConsistsOf:{this.genusAnimalType}";
         }
     }
 }

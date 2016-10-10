@@ -1,7 +1,8 @@
 using System;
 
 namespace ConsoleApplication {
-    class AnasClypeata: Anas {
+    class AnasClypeata: Animal {
+        public Anas genus = new Anas();
         public AnasClypeata(){
             this.name = "Northern Shoveler";
         }

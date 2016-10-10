@@ -1,7 +1,8 @@
 using System;
 
 namespace ConsoleApplication {
-    class AnasAcuta: Anas {
+    class AnasAcuta: Animal {
+        public Anas genus = new Anas();
         public AnasAcuta(){
             this.name = "Northern Pintail";
         }
@@ -15,11 +16,11 @@ namespace ConsoleApplication {
             this.name = animalName;
             this.length = length;
         }
+        public override string diveDepth(){
+            return "Max dive: 2ft";
+        }
         public override string foods(){
             return $"instead of {base.foods()}, it eats PEOPLE!";
-        }
-        public override string diveDepth(){
-            return "medium";
         }
     }
 }

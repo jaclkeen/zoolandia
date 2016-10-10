@@ -1,8 +1,8 @@
 using System;
 
 namespace ConsoleApplication {
-    class Marila: Aythya {
-        public string color = "white and dark grey";
+    class Marila: Animal {
+        public Aythya genus = new Aythya();
         public Marila(){
             this.name = "Greater Scaup";
         }
