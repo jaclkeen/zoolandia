@@ -8,39 +8,46 @@ namespace ConsoleApplication{
                 name = "Northern Pintail",
                 length = 76,
                 call = "proop-proop",
-                color = "purple"
+                color = "purple",
+                genus = new Anas()
             };
-            Console.WriteLine($"{northernPintail.printDuck()} {northernPintail.genus.genusInformation()} {northernPintail.diveDepth()}");
+            Console.WriteLine($"{northernPintail.printDuck()} {northernPintail.genus.genusInformation()} {northernPintail.diveDepth()} {northernPintail.foods()}");
 
-            AnasAmerican americanWigeon = new AnasAmerican("American Wigeon", 23){
+            AnasAmericana americanWigeon = new AnasAmericana("American Wigeon", 23){
                 call = "whoee-whoe-whoe",
-                color = "orange"
+                color = "orange",
+                genus = new Anas()
             };
-            Console.WriteLine($"{americanWigeon.printDuck()} {americanWigeon.genus.genusInformation()} {americanWigeon.diveDepth()}");
+            Console.WriteLine($"{americanWigeon.printDuck()} {americanWigeon.genus.genusInformation()} {americanWigeon.diveDepth()} {americanWigeon.foods()}");
 
             AnasClypeata northernShovler = new AnasClypeata("Northern Shovler"){
                 length = 43,
                 call = "eeeekk",
-                color = "blue"
+                color = "blue",
+                genus = new Anas()
             };
-            Console.WriteLine($"{northernShovler.printDuck()} {northernShovler.genus.genusInformation()} {northernShovler.diveDepth()}");
+            Console.WriteLine($"{northernShovler.printDuck()} {northernShovler.genus.genusInformation()} {northernShovler.diveDepth()} {northernShovler.foods()}");
 
-            Affinis lesserScaup = new Affinis(){
-                color = "pink"
+            Affinis lesserScaup = new Affinis("Lesser Scaup"){
+                color = "pink",
+                genus = new Aythya()
             };
-            Console.WriteLine($"{lesserScaup.printDuck()} {lesserScaup.genus.genusInformation()} {lesserScaup.diveDepth()}");
+            Console.WriteLine($"{lesserScaup.printDuck()} {lesserScaup.genus.genusInformation()} {lesserScaup.diveDepth()} {lesserScaup.foods()}");
 
             Americana redHead = new Americana(){
-                color = "brown"
+                name = "Red Head",
+                color = "brown",
+                genus = new Aythya()
             };
-            Console.WriteLine($"{redHead.printDuck()} {redHead.genus.genusInformation()} {redHead.diveDepth()}");
+            Console.WriteLine($"{redHead.printDuck()} {redHead.genus.genusInformation()} {redHead.diveDepth()} {redHead.foods()}");
 
             Marila greaterScaup = new Marila(){
-                color = "white"
+                color = "white",
+                genus = new Aythya()
             };
-            Console.WriteLine($"{greaterScaup.printDuck()} {greaterScaup.genus.genusInformation()} {greaterScaup.diveDepth()}");
+            Console.WriteLine($"{greaterScaup.printDuck()} {greaterScaup.genus.genusInformation()} {greaterScaup.diveDepth()} {greaterScaup.foods()}");
             Console.WriteLine(greaterScaup.swim(5));
-            Console.WriteLine(greaterScaup.sleep());
+            Console.WriteLine(redHead.sleep());
         }
     }
 }

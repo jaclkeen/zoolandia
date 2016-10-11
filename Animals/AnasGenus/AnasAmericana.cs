@@ -1,21 +1,17 @@
 using System;
 
 namespace ConsoleApplication {
-    class AnasAmerican: Animal {
-         public Anas genus = new Anas();
-        public AnasAmerican(){
+    class AnasAmericana: Animal {
+        public AnasAmericana(){
             this.name = "American Wigeon";
         }
-        public AnasAmerican(string animalName){
+        public AnasAmericana(string animalName){
             this.name = animalName;
         }
-        public AnasAmerican(int length){
+        public AnasAmericana(int length){
             this.length = length;
         }
-        public override string diveDepth(){
-            return "Max dive: 15ft";
-        }
-        public AnasAmerican(string animalName, int length){
+        public AnasAmericana(string animalName, int length){
             this.name = animalName;
             this.length = length;
         }

@@ -2,7 +2,6 @@ using System;
 
 namespace ConsoleApplication {
     class Americana: Animal {
-        public Aythya genus = new Aythya();
         public Americana(){
             this.name = "Redhead";
         }
@@ -16,8 +15,8 @@ namespace ConsoleApplication {
             this.name = animalName;
             this.length = length;
         }
-        public string swim(int speed, string destination){
-            return $"This duck is swimming {speed}mph, and is going to {destination}";
+        public override string diveDepth(){
+            return "Max dive: 25ft";
         }
     }
 }

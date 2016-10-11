@@ -7,4 +7,5 @@ public interface IAnimal{
     string sleep();
     string foods();
     string diveDepth();
+    string swim(int s);
 }

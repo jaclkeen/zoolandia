@@ -2,7 +2,6 @@ using System;
 
 namespace ConsoleApplication {
     class Affinis: Animal {
-        public Aythya genus = new Aythya();
         public Affinis(){
             this.name = "Lesser Scaup";
         }
@@ -16,8 +15,8 @@ namespace ConsoleApplication {
             this.name = animalName;
             this.length = length;
         }
-        public string swim(int speed){
-            return $"This duck is swimming {speed}mph";
+        public override string diveDepth(){
+            return "Max dive: 8ft";
         }
     }
 }
